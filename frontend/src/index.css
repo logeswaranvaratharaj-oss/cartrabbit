@@ -779,6 +779,19 @@ body {
   overflow: hidden;
 }
 
+.list-headers {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
+  padding: 15px 30px;
+  background: #fcfdfe;
+  border-bottom: 2px solid var(--border);
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .avail-row {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 1fr;
@@ -1257,8 +1270,9 @@ body {
 }
 
 /* Meeting Types Admin */
-.meetings-section .avail-row {
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+.meetings-section .avail-row,
+.meetings-section .list-headers {
+  grid-template-columns: 1.5fr 3fr 1fr 1fr 0.5fr;
 }
 
 .meetings-section input[type="color"] {

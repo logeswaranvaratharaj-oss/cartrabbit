@@ -62,7 +62,7 @@ const AdminDashboard = ({
     };
 
     const handleAddMeetingType = () => {
-        const newType = { title: 'New Meeting', duration: 30, color: '#3b82f6', description: 'Description' };
+        const newType = { title: 'New Meeting', duration: 30, color: '#3b82f6', description: '' };
         setMeetingTypes([...meetingTypes, newType]);
     };
 
@@ -205,6 +205,7 @@ const AdminDashboard = ({
                     <div className="availability-list">
                         <div className="list-headers">
                             <span>Title</span>
+                            <span>Description</span>
                             <span>Duration (m)</span>
                             <span>Color</span>
                             <span>Actions</span>
@@ -216,6 +217,12 @@ const AdminDashboard = ({
                                     value={type.title}
                                     onChange={e => handleUpdateMeetingType(idx, 'title', e.target.value)}
                                     placeholder="Meeting Title"
+                                />
+                                <input
+                                    type="text"
+                                    value={type.description || ''}
+                                    onChange={e => handleUpdateMeetingType(idx, 'description', e.target.value)}
+                                    placeholder="Description"
                                 />
                                 <input
                                     type="number"

@@ -23,6 +23,11 @@ const Sidebar = ({ selectedType, setStep, setSelectedDate, setSelectedTime, sele
             <div className="sidebar-middle">
                 <div className="event-details-card" style={{ borderColor: selectedType.color }}>
                     <h3 style={{ color: selectedType.color }}>{selectedType.title}</h3>
+                    {selectedType.description && (
+                        <p style={{ fontSize: '14px', color: 'var(--text-light)', marginBottom: '16px', fontWeight: 500 }}>
+                            {selectedType.description}
+                        </p>
+                    )}
                     <div className="detail-row">
                         <Clock size={16} />
                         <span>{selectedType.duration} mins</span>

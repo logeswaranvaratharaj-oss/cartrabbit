@@ -3,7 +3,7 @@
 This document provides a comprehensive breakdown of the Laravel-based backend architecture, logic, and dependencies.
 
 ## 1. Technology Stack & Packages
-*   **Laravel 11**: The core PHP framework used for its robust API routing, Eloquent ORM, and built-in mailing system.
+*   **Laravel 12**: The core PHP framework used for its robust API routing, Eloquent ORM, and built-in mailing system.
 *   **Laravel Sanctum**: Used for lightweight API token authentication (protecting admin routes).
 *   **Carbon**: A PHP extension for DateTime, used extensively for calculating time slots and availability.
 *   **MySQL**: The relational database used to store users, bookings, and availability configurations.

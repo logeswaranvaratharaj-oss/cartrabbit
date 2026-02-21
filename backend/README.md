@@ -62,7 +62,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Technology Stack & Packages
 
-Laravel 11: The core PHP framework used for its robust API routing, Eloquent ORM, and built-in mailing system.
+Laravel 12: The core PHP framework used for its robust API routing, Eloquent ORM, and built-in mailing system.
 
 Laravel Sanctum: Used for lightweight API token authentication (protecting admin routes).
 
